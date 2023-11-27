@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>C:\ame\aiventure\aiventure-github\aiventure-metal-circuits\01-getting-started\01-getting-started\01-getting-started.kicad_sch</source>
-    <date>2023-11-27 13:52:30</date>
+    <date>2023-11-27 17:22:18</date>
     <tool>Eeschema 7.0.9</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -57,6 +57,16 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>bd34170d-6533-42c9-aeea-0e1977526e43</tstamps>
     </comp>
+    <comp ref="SW1">
+      <value>M2011S3A1W03</value>
+      <footprint>getting-started:Switch_Toggle_SPST_NKK_M2011S3A1x03</footprint>
+      <libsource lib="getting-started" part="M2011S3A1W03" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="01-getting-started.kicad_sch"/>
+      <property name="ki_keywords" value="spst switch toggle"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>01c324e9-0e57-45c5-949d-a3ade17a259c</tstamps>
+    </comp>
   </components>
   <libparts>
     <libpart lib="Device" part="Battery_Cell">
@@ -106,10 +116,24 @@
         <pin num="2" name="" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="getting-started" part="M2011S3A1W03">
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">M2011S3A1W03</field>
+        <field name="Footprint">getting-started:Switch_Toggle_SPST_NKK_M2011S3A1x03</field>
+      </fields>
+      <pins>
+        <pin num="2" name="A" type="passive"/>
+        <pin num="3" name="B" type="passive"/>
+      </pins>
+    </libpart>
   </libparts>
   <libraries>
     <library logical="Device">
       <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Device.kicad_sym</uri>
+    </library>
+    <library logical="getting-started">
+      <uri>C:\ame\aiventure\aiventure-github\aiventure-metal-circuits\01-getting-started\01-getting-started/sym/getting-started.kicad_sym</uri>
     </library>
   </libraries>
   <nets>
@@ -121,9 +145,13 @@
       <node ref="BT1" pin="2" pinfunction="-" pintype="passive"/>
       <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
     </net>
-    <net code="3" name="VCC">
+    <net code="3" name="Net-(BT1-+)">
       <node ref="BT1" pin="1" pinfunction="+" pintype="passive"/>
+      <node ref="SW1" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="4" name="VCC">
       <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="SW1" pin="3" pinfunction="B" pintype="passive"/>
     </net>
   </nets>
 </export>
