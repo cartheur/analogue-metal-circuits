@@ -1,0 +1,21 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 660bd9ca-0c1a-48aa-8587-69375646ae74)
+
+  (paper "A4")
+
+  (title_block
+    (title "Rodney Beacon")
+    (date "2023-11-27")
+    (rev "0")
+    (company "Cartheur Research")
+  )
+
+  (lib_symbols
+  )
+
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)
