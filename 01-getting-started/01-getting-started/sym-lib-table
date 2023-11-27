@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "getting-started")(type "KiCad")(uri "${KIPRJMOD}/sym/getting-started.kicad_sym")(options "")(descr ""))
+)
