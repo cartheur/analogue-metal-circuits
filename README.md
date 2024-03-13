@@ -1,6 +1,6 @@
-# aiventure-metal-circuits
+## analogue-metal-circuits
 
-A collection of circuits for a foray into the _metal_ project. A development tracker.
+A collection of (analogue) circuits for a foray into the _metal_ project. A development tracker.
 
 ## What is in here
 
